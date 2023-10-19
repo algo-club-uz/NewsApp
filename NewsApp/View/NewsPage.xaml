@@ -13,6 +13,8 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
+        <Entry Placeholder="Enter your username" Text="{Binding UserName}"></Entry>
+
         <Button Text="Sign In" Command="{Binding SignInCommand}"></Button>
     </VerticalStackLayout>
 </ContentPage>
