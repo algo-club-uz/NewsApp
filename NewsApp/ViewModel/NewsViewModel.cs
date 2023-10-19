@@ -12,7 +12,7 @@ public partial class NewsViewModel:ObservableObject
     [RelayCommand]
      void Login()
      {
-         Shell.Current.Navigation.PushAsync(new NewsDetailPage());
+         Shell.Current.GoToAsync(nameof(NewsDetailPage));
      }
 
 }
