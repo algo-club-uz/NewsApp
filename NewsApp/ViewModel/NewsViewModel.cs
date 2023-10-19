@@ -1,15 +1,23 @@
-﻿namespace NewsApp.ViewModel;
+﻿using System.ComponentModel;
 
-public class NewsViewModel
+namespace NewsApp.ViewModel;
+
+public class NewsViewModel:INotifyPropertyChanged
 {
     public Command SignInCommand { get; set; }
+
+    public event PropertyChangedEventHandler PropertyChanged;
 
     private string userName;
 
     public string UserName
     {
         get => userName;
-        set => userName = value;
+        set
+        {
+            userName = value;
+            OnPropertyChanged("UserName");
+        }
     }
 
 
@@ -22,4 +30,10 @@ public class NewsViewModel
     {
         var user = UserName;
     }
+
+    void OnPropertyChanged(string name)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
+
 }
