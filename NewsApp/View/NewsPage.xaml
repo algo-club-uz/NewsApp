@@ -9,9 +9,9 @@
 
     <VerticalStackLayout Margin="30">
 
-        <Label Text="{Binding UserName}"/>
+        <Label Text="{Binding Username}"/>
 
-            <Entry Placeholder="Enter your username" Text="{Binding UserName}"></Entry>
+            <Entry Placeholder="Enter your username" Text="{Binding Username}"></Entry>
 
         <Button Text="Sign In" Command="{Binding SignInCommand}"></Button>
     </VerticalStackLayout>
