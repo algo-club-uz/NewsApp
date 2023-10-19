@@ -13,6 +13,6 @@
 
             <Entry Placeholder="Enter your username" Text="{Binding Username}"></Entry>
 
-        <Button Text="Sign In" Command="{Binding SignInCommand}"></Button>
+        <Button Text="Sign In" Command="{Binding LoginCommand}"></Button>
     </VerticalStackLayout>
 </ContentPage>
