@@ -2,8 +2,8 @@
 
 namespace NewsApp.ViewModel;
 
-[QueryProperty(nameof(user_name),"username")]
-public partial class NewsDetailpageModel_:ObservableObject
+[QueryProperty(nameof(User_name),"username")]
+public partial class NewsDetailPageModel:ObservableObject
 {
     [ObservableProperty]
      string user_name;
