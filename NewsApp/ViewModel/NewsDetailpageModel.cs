@@ -1,10 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using NewsApp.Model;
 
 namespace NewsApp.ViewModel;
 
-[QueryProperty(nameof(User_name),"username")]
+[QueryProperty(nameof(Model.User), "UserKey")]
 public partial class NewsDetailPageModel:ObservableObject
 {
-    [ObservableProperty]
-     string user_name;
+    [ObservableProperty] 
+    private User user;
 }

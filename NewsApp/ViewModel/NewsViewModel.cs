@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using NewsApp.Model;
 using NewsApp.View;
 
 namespace NewsApp.ViewModel;
@@ -12,7 +13,17 @@ public partial class NewsViewModel:ObservableObject
     [RelayCommand]
      void Login()
      {
-         Shell.Current.GoToAsync($"{nameof(NewsDetailPage)}?username={Username}");
+         var user = new User()
+         {
+             Name = "Maruf",
+             Email = "fuga02@gmail.com",
+             Phone = "931544780"
+         };
+
+         Shell.Current.GoToAsync($"{nameof(NewsDetailPage)}",new Dictionary<string, object>
+         {
+             {"UserKey",user}
+         });
      }
 
 }
