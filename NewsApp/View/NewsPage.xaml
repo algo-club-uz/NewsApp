@@ -6,6 +6,22 @@
              xmlns:viewmodel="clr-namespace:NewsApp.ViewModel"
              x:DataType="viewmodel:NewsViewModel"
              >
+    <CollectionView Margin="10">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout ItemSpacing="20" Orientation ="Vertical"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Padding="5" 
+                       BorderColor="LightGray"
+                       CornerRadius="0">
+                    <VerticalStackLayout>
+                        <Image HeightRequest="200" Aspect="AspectFill"/>
+                        <Label FontSize="Medium"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 
-    
 </ContentPage>
