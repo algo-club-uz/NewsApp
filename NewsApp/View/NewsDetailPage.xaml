@@ -7,9 +7,8 @@
              x:DataType="viewmodel:NewsDetailPageModel"
              >
     <VerticalStackLayout>
-        <Label 
-            Text="{Binding User_name}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+       <Label Text="{Binding User.Name}" />
+       <Label Text="{Binding User.Email}"/>
+       <Label Text="{Binding User.Phone}"/>
     </VerticalStackLayout>
 </ContentPage>

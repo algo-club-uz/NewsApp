@@ -3,7 +3,7 @@ using NewsApp.Model;
 
 namespace NewsApp.ViewModel;
 
-[QueryProperty(nameof(Model.User), "UserKey")]
+[QueryProperty(nameof(User), "UserKey")]
 public partial class NewsDetailPageModel:ObservableObject
 {
     [ObservableProperty] 
