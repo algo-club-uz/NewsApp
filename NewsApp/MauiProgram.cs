@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using NewsApp.Services;
+using NewsApp.View;
+using NewsApp.ViewModel;
 
 namespace NewsApp
 {
@@ -14,6 +17,9 @@ namespace NewsApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddSingleton<MockNewsService>();
+            builder.Services.AddSingleton<NewsViewModel>();
+            builder.Services.AddSingleton<NewsPage>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
