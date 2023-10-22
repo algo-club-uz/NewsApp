@@ -4,7 +4,7 @@
              x:Class="NewsApp.View.NewsDetailPage"
              Title="NewsDetailPage"
              xmlns:viewmodel="clr-namespace:NewsApp.ViewModel"
-             x:DataType="viewmodel:NewsDetailPageModel"
+             x:DataType="viewmodel:NewsDetailViewModel"
              >
    
 </ContentPage>

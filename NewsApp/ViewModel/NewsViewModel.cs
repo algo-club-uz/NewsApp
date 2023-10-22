@@ -28,8 +28,8 @@ public partial class NewsViewModel:ObservableObject
       }
     }
 
-    [ObservableProperty]
-    private News selectedNews;
+    [ObservableProperty] 
+     News selectedNews; 
 
     [RelayCommand]
     void GoToDetails()
@@ -37,7 +37,7 @@ public partial class NewsViewModel:ObservableObject
         Shell.Current.GoToAsync($"{nameof(NewsDetailPage)}",
             new Dictionary<string, object>
             {
-                {"News",}
+                {"News",SelectedNews}
             });
 
     }

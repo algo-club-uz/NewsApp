@@ -4,8 +4,8 @@ using NewsApp.Model;
 namespace NewsApp.ViewModel;
 
 [QueryProperty(nameof(News),"News")]
-public partial class NewsDetailPageModel:ObservableObject
+public partial class NewsDetailViewModel:ObservableObject
 {
     [ObservableProperty]
-    private News news;
+     News news;
 }
