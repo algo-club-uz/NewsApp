@@ -7,7 +7,10 @@
              x:DataType="viewmodel:NewsViewModel"
              xmlns:model="clr-namespace:NewsApp.Model"
              >
-    <CollectionView Margin="10" ItemsSource="{Binding NewsCollection}">
+    <CollectionView Margin="10" ItemsSource="{Binding NewsCollection}"
+                    SelectedItem="{Binding SelectedNews}"
+                    SelectionChangedCommand="{Binding GoToDetailsCommand}"
+                    SelectionMode="Single">
         <CollectionView.ItemsLayout>
             <LinearItemsLayout ItemSpacing="20" Orientation ="Vertical"/>
         </CollectionView.ItemsLayout>

@@ -21,7 +21,7 @@ namespace NewsApp
             builder.Services.AddSingleton<NewsViewModel>();
             builder.Services.AddSingleton<NewsPage>();
             builder.Services.AddSingleton<NewsDetailPage>();
-            builder.Services.AddSingleton<NewsDetailPageModel>();
+            builder.Services.AddSingleton<NewsDetailViewModel>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
