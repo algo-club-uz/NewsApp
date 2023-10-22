@@ -20,6 +20,8 @@ namespace NewsApp
             builder.Services.AddSingleton<MockNewsService>();
             builder.Services.AddSingleton<NewsViewModel>();
             builder.Services.AddSingleton<NewsPage>();
+            builder.Services.AddSingleton<NewsDetailPage>();
+            builder.Services.AddSingleton<NewsDetailPageModel>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
