@@ -3,7 +3,7 @@ using NewsApp.Model;
 
 namespace NewsApp.ViewModel;
 
-[QueryProperty(nameof(News),"News")]
+[QueryProperty(nameof(news),"News")]
 public partial class NewsDetailViewModel:ObservableObject
 {
     [ObservableProperty]
